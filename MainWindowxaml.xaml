@@ -1,0 +1,14 @@
+﻿<Window x:Class="TimeTrackerWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Time Tracker" Height="450" Width="800">
+    <DockPanel>
+
+        <StackPanel Orientation="Horizontal" DockPanel.Dock="Top" Background="#333" Height="40">
+            <Button Content="Track" Click="Track_Click" Margin="5"/>
+            <Button Content="History" Click="History_Click" Margin="5"/>
+        </StackPanel>
+
+        <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden"/>
+    </DockPanel>
+</Window>
